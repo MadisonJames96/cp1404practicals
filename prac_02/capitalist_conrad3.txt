@@ -1,0 +1,6 @@
+On day 1 price is: $9.68
+On day 2 price is: $9.20
+On day 3 price is: $27.49
+On day 4 price is: $26.74
+On day 5 price is: $26.73
+On day 6 price is: $306.71
