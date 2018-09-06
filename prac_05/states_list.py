@@ -1,6 +1,5 @@
 
-
-# TODO: Reformat this file so the dictionary code follows PEP 8 convention
+def main():
 STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales",
                "NT": "Northern Territory", "WA": "Western Australia",
                "ACT": "Australian Capital Territory", "VIC": "Victoria",
@@ -11,3 +10,4 @@ for abbreviation in STATE_NAMES:
     # print(abbreviation, "is", STATE_NAMES[state])
     print("{:3} is {}".format(abbreviation, STATE_NAMES[state]))
 
+main()
