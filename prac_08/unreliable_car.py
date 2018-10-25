@@ -3,7 +3,7 @@ from random import randint
 
 class UnreliableCar(Car):
 
-    def __int__(self, name, fuel, reliability):
+    def __init__(self, name, fuel, reliability):
         super().__init__(name, fuel)
         self.reliability = reliability
 
