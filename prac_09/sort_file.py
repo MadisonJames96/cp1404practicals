@@ -1,24 +1,21 @@
-import shutil
 import os
 
-def main():
 
-    # Change to desired directory
+def main():
     os.chdir('FilesToSort')
 
     print("Files in {}:\n{}\n".format(os.getcwd(), os.listdir('.')))
-    for filename in os.listdir('.'):
-        if os.path.isdir(filename):
+    for file in os.listdir('.'):
+        if os.path.isdir(file):
             continue
 
-        extension = filename.split('.')[-1]
+        extension = file.split('.')[-1]
         try:
             os.mkdir(extension)
         except FileExistsError:
             pass
 
+        os.rename(file,  extension)
 
-
-        os.rename(filename, "{}/{}".format(extension, filename))
 
 main()

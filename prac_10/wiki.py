@@ -10,9 +10,11 @@ def search_page(search_title):
     try:
         search_title = wikipedia.summary(search_title)
     except wikipedia.exceptions.DisambiguationError as e:
-        print e.options
+        print(e.options)
 
 title = input("Enter title of page: ")
 while title != "":
-    print(search_page(title))
+    # print(search_page(title))
+    print(wikipedia.summary(title))
+    print(wikipedia.title)
     title = input("Enter title of page: ")
